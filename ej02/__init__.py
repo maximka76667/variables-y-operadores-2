@@ -2,6 +2,8 @@ import re
 from math import sqrt
 
 a = b = c = 0
+def numParte(n):
+    return int(n[0:n.index("x")] or 1)
 
 s = input("f(x) = ")
 
@@ -11,10 +13,10 @@ result = re.split('\s?[+-]\s?', s)
 # Comprobamos que valor contiene parte y cojemos el valor
 for n in result:
     if(re.search('x\^2$', n)):
-        a = int(n[0:n.index("x")] or 1)
+        a = numParte(n)
         
     elif(re.search('x$', n)):
-        b = int(n[0:n.index("x")] or 1)
+        b = numParte(n)
         
     else:
         c = int(n)
