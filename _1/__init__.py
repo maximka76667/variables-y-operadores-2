@@ -1,3 +1,1 @@
-gradosKelvin = int(input("Kelvin: "))
-
-print("Celcius =", gradosKelvin - 273)
+print("Celcius =", int(input("Kelvin: ")) - 273)

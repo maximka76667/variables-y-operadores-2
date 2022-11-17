@@ -15,12 +15,11 @@ def getWeightBrocca(h):
 def getWeightMetropolitan(h):
     return 50 + 0.75 * (h - 150)
 
-
 height = int(input("Altura: "))
 age = int(input("Edad: "))
 sex = bool(int(input("Sexo (0 - hombre, 1 - mujer): ")))
-    
+
 print("Lorenzt:", getWeightLorenzt(height, age, sex), "kg")
-print("Perroult:",getWeightPerroult(height, age), "kg")
-print("Brocca:",getWeightBrocca(height), "kg")
-print("Metropolitan:",getWeightMetropolitan(height), "kg")
+print("Perroult:", getWeightPerroult(height, age), "kg")
+print("Brocca:", getWeightBrocca(height), "kg")
+print("Metropolitan:", getWeightMetropolitan(height), "kg")
